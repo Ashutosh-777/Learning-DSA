@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+int peakIndexInMountainArray(int a[],int n) {
+        int start = 0;
+        int end = n-1;
+        int result = -1;
+        if(n==1){
+            return 0;
+        }
+        while(start<=end){
+            int middle = start + (end-start)/2;
+            if(middle>0&&middle<n-1){
+                if(a[middle]>a[middle-1]&&a[middle]>a[middle+1]){
+                return middle;
+            }else if(a[middle]>a[middle-1]){
+                result = middle;
+                start = middle + 1;
+            }else {
+                end = middle-1;
+            }
+            }
+            if(middle == 0) {
+            if(a[middle]>a[middle+1]){
+                result =  middle;
+            }else if(a[middle]<a[middle+1]){
+                result = middle+1;
+                cout<<"hi"<<endl;
+               break;
+            }
+            }
+            if(middle == n-1 ){
+            if(a[middle]>a[middle-1]){
+                result =  middle;
+            }else if(a[middle]<a[middle-1]){
+                result = middle+1;
+               break;
+            }
+            }
+           
+        }
+        return result;
+    }
+int main(){
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    cout<<peakIndexInMountainArray(a,n);
+    return 0;
+}
