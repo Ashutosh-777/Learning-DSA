@@ -31,11 +31,50 @@ class Solution {
       return false;
       
   }
+  vector<int>* reverseGraph(int v,vector<int> adj[],vector<int> ans[]){
+      for(int i=0;i<v;i++){
+          for(auto it: adj[i]){
+              ans[it].push_back(i);
+          }
+      }
+      return ans;
+  }
+  vector<int> bfs(int v,vector<int> ans[]){
+      vector<int> adj[v];
+      reverseGraph(v,ans,adj);
+      int in[v]={0};
+      queue<int>q;
+      for(int i=0;i<v;i++){
+          for(auto it: adj[i]){
+              in[it]++;
+          }
+      }
+      for(int i=0;i<v;i++){
+          if(in[i]==0){
+              q.push(i);
+          }
+      }
+      vector<int> topo;
+      while(!q.empty()){
+          int front = q.front();
+          q.pop();
+          topo.push_back(front);
+          for(auto it:adj[front]){
+              in[it]--;
+              if(in[it]==0){
+                  q.push(it);
+              }
+          }
+      }
+      sort(topo.begin(),topo.end());
+      return topo;
+  }
   public:
     vector<int> eventualSafeNodes(int v, vector<int> adj[]) {
         vector<int> ans(v,0);
         vector<int> vis(v,0);
         vector<int> path(v,0);
+        //return bfs(v,adj);
         for(int i=0;i<v;i++){
             if(!vis[i]){
                 dfs(i,adj,ans,vis,path);

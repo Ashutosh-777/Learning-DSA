@@ -230,8 +230,8 @@
         \item {Won \textbf{SILVER MEDAL} in Inter Hostel event}
     \resumeItemListEnd
     \resumeProject
-      {EfficienSee}
-      {Capstone Project/Coding Club}{Jan 2023}{\href{https://github.com/Ashutosh-777/EfficienSee}{Github/EfficienSee}}
+      {Productivity App}
+      {Capstone Project/Coding Club}{Jan 2023}{\href{https://github.com/Ashutosh-777/Productivity-App}{Github/ProductivityApp}}
       \resumeItemListStart
         \item {Mobile Application to track your day to day Productivity allows you to add, edit, update, and delete task}
     \item { Used \textbf{Firebase} and \textbf{Firestore} to enable \textbf{ Email Authentication} and to store users data   }
@@ -295,16 +295,16 @@
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 \resumePOR{App Developer} % Position
-    {Student's Web Community} %Club,Event
+    {Student's Web Committee} %Club,Event
     {March 2023-Present} %Tenure Period
 \resumeItemListStart
-    \item  Worked as an App developer in the SWC,Mainly responsible for making and maintaining App for IITG students.
+    \item  Worked as an App developer in the SWC,Mainly responsible for making and maintaining App for IITG students
 \resumeItemListEnd
     \resumePOR{Core Team} % Position
     {Techniche(Techno-Management Fest)} %Club,Event
     {Jan 2023-Present} %Tenure Period  
 \resumeItemListStart
-    \item Organized global TechExpo module for India's second-largest Techno-management festival.
+    \item Organized global TechExpo module for India's second-largest Techno-management festival
     \item Leading a team of 24 Organisers for the module
 \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -331,14 +331,14 @@
 \resumePOR{Karate Black Belt} % Award
     { } % Event
     {} %Event Year
-\resumePOR{Participated in Essay Writing competition,Conducted by Prayatna The Social Awareness Fest} % Award
-    { } % Event
+\resumePOR{TedX IITG} % Award
+    { Co-organized TEDx talk at IITG, showcasing innovative ideas and inspiring speakers } % Event
     {} %Event Year
-\resumePOR{COs Volunteer Under NSS Cell} % Award
-    { } % Event
+\resumePOR{Cos Volunteer} % Award
+    { NSS Cell IITG} % Event
     {} %Event Year
-\resumePOR{Participated in Startup Auction   } % Award
-    {E-SUMMIT'23, E-CELL, IIT BHU} % Event
+\resumePOR{Participated in Startup Auction} % Award
+    { E-SUMMIT'23 (IIT BHU)} % Event
     {} %Event Year
 
 \resumeSubHeadingListEnd
